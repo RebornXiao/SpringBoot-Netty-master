@@ -1,0 +1,926 @@
+2017-10-25 23:26:28 INFO  StartupInfoLogger 48 logStarting - Starting Application on HP with PID 16668 (D:\Java\javajob\SpringBoot-Netty-master\target\classes started by HP-PC in D:\Java\javajob\SpringBoot-Netty-master)
+2017-10-25 23:26:28 INFO  SpringApplication 666 logStartupProfileInfo - The following profiles are active: rds,redis
+2017-10-25 23:26:28 INFO  AbstractApplicationContext 582 prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@12468a38: startup date [Wed Oct 25 23:26:28 GMT+08:00 2017]; root of context hierarchy
+2017-10-25 23:26:29 INFO  RepositoryConfigurationDelegate 170 multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-25 23:26:31 INFO  DruidDataSource 669 init - {dataSource-1} inited
+2017-10-25 23:26:31 INFO  LocalContainerEntityManagerFactoryBean 349 createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-25 23:26:31 INFO  LogHelper 46 logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-25 23:26:31 INFO  Version 54 logVersion - HHH000412: Hibernate Core {4.3.6.Final}
+2017-10-25 23:26:31 INFO  Environment 239 <clinit> - HHH000206: hibernate.properties not found
+2017-10-25 23:26:31 INFO  Environment 346 buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+2017-10-25 23:26:32 INFO  JavaReflectionManager 66 <clinit> - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-25 23:26:32 INFO  Dialect 145 <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-25 23:26:32 INFO  ASTQueryTranslatorFactory 47 <init> - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-25 23:26:33 INFO  AbstractEntityManagerFactoryBean 379 buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-25 23:26:33 INFO  Dialect 145 <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-25 23:26:33 INFO  TransactionFactoryInitiator 62 initiateService - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-25 23:26:33 INFO  ASTQueryTranslatorFactory 47 <init> - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-25 23:26:33 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final void org.springframework.orm.hibernate4.support.HibernateDaoSupport.setSessionFactory(org.hibernate.SessionFactory)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:26:33 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final org.hibernate.SessionFactory org.springframework.orm.hibernate4.support.HibernateDaoSupport.getSessionFactory()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:26:33 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final void org.springframework.orm.hibernate4.support.HibernateDaoSupport.setHibernateTemplate(org.springframework.orm.hibernate4.HibernateTemplate)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:26:33 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final org.springframework.orm.hibernate4.HibernateTemplate org.springframework.orm.hibernate4.support.HibernateDaoSupport.getHibernateTemplate()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:26:33 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [protected final org.hibernate.Session org.springframework.orm.hibernate4.support.HibernateDaoSupport.currentSession() throws org.springframework.dao.DataAccessResourceFailureException] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:26:33 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [protected final void org.springframework.orm.hibernate4.support.HibernateDaoSupport.checkDaoConfig()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:26:33 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:26:33 ERROR DruidDataSource 643 init - init datasource error, url: jdbc:mysql://localhost:3306/communitydatabase?useUnicode=true&characterEncoding=utf-8&useSSL=true com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'communitydatabase'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:951) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1717) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2395) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.20.jar:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375) ~[druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431) ~[druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:632) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:934) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:930) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:102) [druid-1.0.13.jar:1.0.13]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:279) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:124) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1885) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1843) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:372) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:454) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:439) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at com.aaron.Application.main(Application.java:12) [classes/:?]
+
+2017-10-25 23:26:33 ERROR DruidDataSource 660 init - dataSource init error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'communitydatabase'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:951) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1717) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2395) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.20.jar:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375) ~[druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431) ~[druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:632) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:934) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:930) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:102) [druid-1.0.13.jar:1.0.13]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:279) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:124) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1885) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1843) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:372) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:454) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:439) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at com.aaron.Application.main(Application.java:12) [classes/:?]
+
+2017-10-25 23:26:33 INFO  DruidDataSource 669 init - {dataSource-2} inited
+2017-10-25 23:26:33 WARN  JdbcServicesImpl 204 configure - HHH000342: Could not obtain connection to query metadata : Unknown database 'communitydatabase'
+2017-10-25 23:26:33 INFO  Dialect 145 <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-25 23:26:33 INFO  LobCreatorBuilder 88 useContextualLobCreation - HHH000422: Disabling contextual LOB creation as connection was null
+2017-10-25 23:26:33 INFO  TransactionFactoryInitiator 62 initiateService - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-25 23:26:33 INFO  ASTQueryTranslatorFactory 47 <init> - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-25 23:26:33 INFO  HibernateTransactionManager 360 afterPropertiesSet - Using DataSource [{
+	CreateTime:"2017-10-25 23:26:30",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:3,
+	ConnectCount:3,
+	Connections:[
+		{ID:1565614310, ConnectTime:"2017-10-25 23:26:31", UseCount:0, LastActiveTime:"2017-10-25 23:26:31"},
+		{ID:783141366, ConnectTime:"2017-10-25 23:26:31", UseCount:0, LastActiveTime:"2017-10-25 23:26:31"},
+		{ID:688113407, ConnectTime:"2017-10-25 23:26:31", UseCount:0, LastActiveTime:"2017-10-25 23:26:31"},
+		{ID:1638864144, ConnectTime:"2017-10-25 23:26:31", UseCount:0, LastActiveTime:"2017-10-25 23:26:31"},
+		{ID:934223763, ConnectTime:"2017-10-25 23:26:31", UseCount:3, LastActiveTime:"2017-10-25 23:26:33"}
+	]
+}
+
+[
+	{
+	ID:1565614310, 
+	poolStatements:[
+		]
+	},
+	{
+	ID:783141366, 
+	poolStatements:[
+		]
+	},
+	{
+	ID:688113407, 
+	poolStatements:[
+		]
+	},
+	{
+	ID:1638864144, 
+	poolStatements:[
+		]
+	},
+	{
+	ID:934223763, 
+	poolStatements:[
+		]
+	}
+]] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-25 23:26:33 INFO  HibernateTransactionManager 360 afterPropertiesSet - Using DataSource [{
+	CreateTime:"2017-10-25 23:26:33",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}
+
+[
+]] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-25 23:26:34 INFO  MBeanExporter 431 afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+2017-10-25 23:26:34 INFO  MBeanExporter 916 autodetect - Bean with name 'serverDataSource' has been autodetected for JMX exposure
+2017-10-25 23:26:34 INFO  MBeanExporter 916 autodetect - Bean with name 'communityDataSource' has been autodetected for JMX exposure
+2017-10-25 23:26:34 INFO  MBeanExporter 671 registerBeanInstance - Located MBean 'serverDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=serverDataSource,type=DruidDataSource]
+2017-10-25 23:26:34 INFO  MBeanExporter 671 registerBeanInstance - Located MBean 'communityDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=communityDataSource,type=DruidDataSource]
+2017-10-25 23:26:34 INFO  StartupInfoLogger 57 logStarted - Started Application in 7.26 seconds (JVM running for 11.126)
+2017-10-25 23:34:58 WARN  Slf4JLogger 151 warn - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception. java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_51]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_51]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_51]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_51]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_51]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:366) ~[netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:651) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_51]
+
+2017-10-25 23:35:04 INFO  StartupInfoLogger 48 logStarting - Starting Application on HP with PID 17612 (D:\Java\javajob\SpringBoot-Netty-master\target\classes started by HP-PC in D:\Java\javajob\SpringBoot-Netty-master)
+2017-10-25 23:35:04 INFO  SpringApplication 666 logStartupProfileInfo - The following profiles are active: rds,redis
+2017-10-25 23:35:05 INFO  AbstractApplicationContext 582 prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@12468a38: startup date [Wed Oct 25 23:35:05 GMT+08:00 2017]; root of context hierarchy
+2017-10-25 23:35:05 INFO  RepositoryConfigurationDelegate 170 multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-25 23:35:06 INFO  DruidDataSource 669 init - {dataSource-1} inited
+2017-10-25 23:35:06 INFO  LocalContainerEntityManagerFactoryBean 349 createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-25 23:35:06 INFO  LogHelper 46 logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-25 23:35:06 INFO  Version 54 logVersion - HHH000412: Hibernate Core {4.3.6.Final}
+2017-10-25 23:35:06 INFO  Environment 239 <clinit> - HHH000206: hibernate.properties not found
+2017-10-25 23:35:06 INFO  Environment 346 buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+2017-10-25 23:35:07 INFO  JavaReflectionManager 66 <clinit> - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-25 23:35:07 INFO  Dialect 145 <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-25 23:35:07 INFO  ASTQueryTranslatorFactory 47 <init> - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-25 23:35:07 INFO  AbstractEntityManagerFactoryBean 379 buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-25 23:35:07 INFO  Dialect 145 <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-25 23:35:07 INFO  TransactionFactoryInitiator 62 initiateService - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-25 23:35:07 INFO  ASTQueryTranslatorFactory 47 <init> - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-25 23:35:07 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [protected final org.hibernate.Session org.springframework.orm.hibernate4.support.HibernateDaoSupport.currentSession() throws org.springframework.dao.DataAccessResourceFailureException] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:35:07 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [protected final void org.springframework.orm.hibernate4.support.HibernateDaoSupport.checkDaoConfig()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:35:07 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final org.hibernate.SessionFactory org.springframework.orm.hibernate4.support.HibernateDaoSupport.getSessionFactory()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:35:07 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final void org.springframework.orm.hibernate4.support.HibernateDaoSupport.setSessionFactory(org.hibernate.SessionFactory)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:35:07 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final org.springframework.orm.hibernate4.HibernateTemplate org.springframework.orm.hibernate4.support.HibernateDaoSupport.getHibernateTemplate()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:35:07 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final void org.springframework.orm.hibernate4.support.HibernateDaoSupport.setHibernateTemplate(org.springframework.orm.hibernate4.HibernateTemplate)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:35:07 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:35:07 ERROR DruidDataSource 643 init - init datasource error, url: jdbc:mysql://localhost:3306/communitydatabase?useUnicode=true&characterEncoding=utf-8&useSSL=true com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'communitydatabase'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:951) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1717) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2395) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.20.jar:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375) ~[druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431) ~[druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:632) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:934) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:930) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:102) [druid-1.0.13.jar:1.0.13]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:279) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:124) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1885) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1843) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:372) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:454) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:439) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at com.aaron.Application.main(Application.java:12) [classes/:?]
+
+2017-10-25 23:35:07 ERROR DruidDataSource 660 init - dataSource init error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'communitydatabase'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:951) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1717) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2395) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.20.jar:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375) ~[druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431) ~[druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:632) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:934) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:930) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:102) [druid-1.0.13.jar:1.0.13]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:279) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:124) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1885) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1843) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:372) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:454) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:439) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at com.aaron.Application.main(Application.java:12) [classes/:?]
+
+2017-10-25 23:35:07 INFO  DruidDataSource 669 init - {dataSource-2} inited
+2017-10-25 23:35:07 WARN  JdbcServicesImpl 204 configure - HHH000342: Could not obtain connection to query metadata : Unknown database 'communitydatabase'
+2017-10-25 23:35:07 INFO  Dialect 145 <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-25 23:35:07 INFO  LobCreatorBuilder 88 useContextualLobCreation - HHH000422: Disabling contextual LOB creation as connection was null
+2017-10-25 23:35:07 INFO  TransactionFactoryInitiator 62 initiateService - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-25 23:35:07 INFO  ASTQueryTranslatorFactory 47 <init> - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-25 23:35:07 INFO  HibernateTransactionManager 360 afterPropertiesSet - Using DataSource [{
+	CreateTime:"2017-10-25 23:35:06",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:3,
+	ConnectCount:3,
+	Connections:[
+		{ID:1565614310, ConnectTime:"2017-10-25 23:35:06", UseCount:0, LastActiveTime:"2017-10-25 23:35:06"},
+		{ID:783141366, ConnectTime:"2017-10-25 23:35:06", UseCount:0, LastActiveTime:"2017-10-25 23:35:06"},
+		{ID:688113407, ConnectTime:"2017-10-25 23:35:06", UseCount:0, LastActiveTime:"2017-10-25 23:35:06"},
+		{ID:1638864144, ConnectTime:"2017-10-25 23:35:06", UseCount:0, LastActiveTime:"2017-10-25 23:35:06"},
+		{ID:934223763, ConnectTime:"2017-10-25 23:35:06", UseCount:3, LastActiveTime:"2017-10-25 23:35:07"}
+	]
+}
+
+[
+	{
+	ID:1565614310, 
+	poolStatements:[
+		]
+	},
+	{
+	ID:783141366, 
+	poolStatements:[
+		]
+	},
+	{
+	ID:688113407, 
+	poolStatements:[
+		]
+	},
+	{
+	ID:1638864144, 
+	poolStatements:[
+		]
+	},
+	{
+	ID:934223763, 
+	poolStatements:[
+		]
+	}
+]] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-25 23:35:07 INFO  HibernateTransactionManager 360 afterPropertiesSet - Using DataSource [{
+	CreateTime:"2017-10-25 23:35:07",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}
+
+[
+]] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-25 23:35:08 INFO  MBeanExporter 431 afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+2017-10-25 23:35:08 INFO  MBeanExporter 916 autodetect - Bean with name 'serverDataSource' has been autodetected for JMX exposure
+2017-10-25 23:35:08 INFO  MBeanExporter 916 autodetect - Bean with name 'communityDataSource' has been autodetected for JMX exposure
+2017-10-25 23:35:08 INFO  MBeanExporter 671 registerBeanInstance - Located MBean 'serverDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=serverDataSource,type=DruidDataSource]
+2017-10-25 23:35:08 INFO  MBeanExporter 671 registerBeanInstance - Located MBean 'communityDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=communityDataSource,type=DruidDataSource]
+2017-10-25 23:35:08 INFO  StartupInfoLogger 57 logStarted - Started Application in 3.561 seconds (JVM running for 5.525)
+2017-10-25 23:36:58 WARN  Slf4JLogger 151 warn - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception. java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_51]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_51]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_51]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_51]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_51]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:366) ~[netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:651) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_51]
+
+2017-10-25 23:37:03 INFO  StartupInfoLogger 48 logStarting - Starting Application on HP with PID 13540 (D:\Java\javajob\SpringBoot-Netty-master\target\classes started by HP-PC in D:\Java\javajob\SpringBoot-Netty-master)
+2017-10-25 23:37:03 INFO  SpringApplication 666 logStartupProfileInfo - The following profiles are active: rds,redis
+2017-10-25 23:37:03 INFO  AbstractApplicationContext 582 prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@12468a38: startup date [Wed Oct 25 23:37:03 GMT+08:00 2017]; root of context hierarchy
+2017-10-25 23:37:04 INFO  RepositoryConfigurationDelegate 170 multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-25 23:37:05 INFO  DruidDataSource 669 init - {dataSource-1} inited
+2017-10-25 23:37:05 INFO  LocalContainerEntityManagerFactoryBean 349 createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-25 23:37:05 INFO  LogHelper 46 logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-25 23:37:05 INFO  Version 54 logVersion - HHH000412: Hibernate Core {4.3.6.Final}
+2017-10-25 23:37:05 INFO  Environment 239 <clinit> - HHH000206: hibernate.properties not found
+2017-10-25 23:37:05 INFO  Environment 346 buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+2017-10-25 23:37:05 INFO  JavaReflectionManager 66 <clinit> - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-25 23:37:05 INFO  Dialect 145 <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-25 23:37:05 INFO  ASTQueryTranslatorFactory 47 <init> - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-25 23:37:05 INFO  AbstractEntityManagerFactoryBean 379 buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-25 23:37:05 INFO  Dialect 145 <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-25 23:37:05 INFO  TransactionFactoryInitiator 62 initiateService - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-25 23:37:05 INFO  ASTQueryTranslatorFactory 47 <init> - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-25 23:37:05 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final void org.springframework.orm.hibernate4.support.HibernateDaoSupport.setSessionFactory(org.hibernate.SessionFactory)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:37:05 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final void org.springframework.orm.hibernate4.support.HibernateDaoSupport.setHibernateTemplate(org.springframework.orm.hibernate4.HibernateTemplate)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:37:05 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final org.springframework.orm.hibernate4.HibernateTemplate org.springframework.orm.hibernate4.support.HibernateDaoSupport.getHibernateTemplate()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:37:05 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final org.hibernate.SessionFactory org.springframework.orm.hibernate4.support.HibernateDaoSupport.getSessionFactory()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:37:05 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [protected final org.hibernate.Session org.springframework.orm.hibernate4.support.HibernateDaoSupport.currentSession() throws org.springframework.dao.DataAccessResourceFailureException] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:37:05 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [protected final void org.springframework.orm.hibernate4.support.HibernateDaoSupport.checkDaoConfig()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:37:05 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:37:05 ERROR DruidDataSource 643 init - init datasource error, url: jdbc:mysql://localhost:3306/communitydatabase?useUnicode=true&characterEncoding=utf-8&useSSL=true com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'communitydatabase'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:951) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1717) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2395) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.20.jar:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375) ~[druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431) ~[druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:632) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:934) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:930) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:102) [druid-1.0.13.jar:1.0.13]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:279) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:124) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1885) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1843) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:372) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:454) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:439) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at com.aaron.Application.main(Application.java:12) [classes/:?]
+
+2017-10-25 23:37:05 ERROR DruidDataSource 660 init - dataSource init error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'communitydatabase'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:951) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1717) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2395) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.20.jar:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375) ~[druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431) ~[druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:632) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:934) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:930) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:102) [druid-1.0.13.jar:1.0.13]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:279) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:124) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1885) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1843) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:372) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:454) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:439) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at com.aaron.Application.main(Application.java:12) [classes/:?]
+
+2017-10-25 23:37:05 INFO  DruidDataSource 669 init - {dataSource-2} inited
+2017-10-25 23:37:05 WARN  JdbcServicesImpl 204 configure - HHH000342: Could not obtain connection to query metadata : Unknown database 'communitydatabase'
+2017-10-25 23:37:06 INFO  Dialect 145 <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-25 23:37:06 INFO  LobCreatorBuilder 88 useContextualLobCreation - HHH000422: Disabling contextual LOB creation as connection was null
+2017-10-25 23:37:06 INFO  TransactionFactoryInitiator 62 initiateService - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-25 23:37:06 INFO  ASTQueryTranslatorFactory 47 <init> - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-25 23:37:06 INFO  HibernateTransactionManager 360 afterPropertiesSet - Using DataSource [{
+	CreateTime:"2017-10-25 23:37:04",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:3,
+	ConnectCount:3,
+	Connections:[
+		{ID:1565614310, ConnectTime:"2017-10-25 23:37:05", UseCount:0, LastActiveTime:"2017-10-25 23:37:05"},
+		{ID:783141366, ConnectTime:"2017-10-25 23:37:05", UseCount:0, LastActiveTime:"2017-10-25 23:37:05"},
+		{ID:688113407, ConnectTime:"2017-10-25 23:37:05", UseCount:0, LastActiveTime:"2017-10-25 23:37:05"},
+		{ID:1638864144, ConnectTime:"2017-10-25 23:37:05", UseCount:0, LastActiveTime:"2017-10-25 23:37:05"},
+		{ID:934223763, ConnectTime:"2017-10-25 23:37:05", UseCount:3, LastActiveTime:"2017-10-25 23:37:05"}
+	]
+}
+
+[
+	{
+	ID:1565614310, 
+	poolStatements:[
+		]
+	},
+	{
+	ID:783141366, 
+	poolStatements:[
+		]
+	},
+	{
+	ID:688113407, 
+	poolStatements:[
+		]
+	},
+	{
+	ID:1638864144, 
+	poolStatements:[
+		]
+	},
+	{
+	ID:934223763, 
+	poolStatements:[
+		]
+	}
+]] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-25 23:37:06 INFO  HibernateTransactionManager 360 afterPropertiesSet - Using DataSource [{
+	CreateTime:"2017-10-25 23:37:05",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}
+
+[
+]] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-25 23:37:06 INFO  MBeanExporter 431 afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+2017-10-25 23:37:06 INFO  MBeanExporter 916 autodetect - Bean with name 'serverDataSource' has been autodetected for JMX exposure
+2017-10-25 23:37:06 INFO  MBeanExporter 916 autodetect - Bean with name 'communityDataSource' has been autodetected for JMX exposure
+2017-10-25 23:37:06 INFO  MBeanExporter 671 registerBeanInstance - Located MBean 'serverDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=serverDataSource,type=DruidDataSource]
+2017-10-25 23:37:06 INFO  MBeanExporter 671 registerBeanInstance - Located MBean 'communityDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=communityDataSource,type=DruidDataSource]
+2017-10-25 23:37:06 INFO  StartupInfoLogger 57 logStarted - Started Application in 3.189 seconds (JVM running for 4.752)
+2017-10-25 23:39:15 WARN  Slf4JLogger 151 warn - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception. java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_51]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_51]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_51]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_51]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_51]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:366) ~[netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:651) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_51]
+
+2017-10-25 23:39:22 INFO  StartupInfoLogger 48 logStarting - Starting Application on HP with PID 5720 (D:\Java\javajob\SpringBoot-Netty-master\target\classes started by HP-PC in D:\Java\javajob\SpringBoot-Netty-master)
+2017-10-25 23:39:22 INFO  SpringApplication 666 logStartupProfileInfo - The following profiles are active: rds,redis
+2017-10-25 23:39:22 INFO  AbstractApplicationContext 582 prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@12468a38: startup date [Wed Oct 25 23:39:22 GMT+08:00 2017]; root of context hierarchy
+2017-10-25 23:39:23 INFO  RepositoryConfigurationDelegate 170 multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-25 23:39:24 INFO  DruidDataSource 669 init - {dataSource-1} inited
+2017-10-25 23:39:24 INFO  LocalContainerEntityManagerFactoryBean 349 createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-25 23:39:24 INFO  LogHelper 46 logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-10-25 23:39:24 INFO  Version 54 logVersion - HHH000412: Hibernate Core {4.3.6.Final}
+2017-10-25 23:39:24 INFO  Environment 239 <clinit> - HHH000206: hibernate.properties not found
+2017-10-25 23:39:24 INFO  Environment 346 buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+2017-10-25 23:39:24 INFO  JavaReflectionManager 66 <clinit> - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-25 23:39:24 INFO  Dialect 145 <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-25 23:39:24 INFO  ASTQueryTranslatorFactory 47 <init> - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-25 23:39:25 INFO  AbstractEntityManagerFactoryBean 379 buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-25 23:39:25 INFO  Dialect 145 <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-25 23:39:25 INFO  TransactionFactoryInitiator 62 initiateService - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-25 23:39:25 INFO  ASTQueryTranslatorFactory 47 <init> - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-25 23:39:25 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final org.springframework.orm.hibernate4.HibernateTemplate org.springframework.orm.hibernate4.support.HibernateDaoSupport.getHibernateTemplate()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:39:25 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final void org.springframework.orm.hibernate4.support.HibernateDaoSupport.setSessionFactory(org.hibernate.SessionFactory)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:39:25 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final org.hibernate.SessionFactory org.springframework.orm.hibernate4.support.HibernateDaoSupport.getSessionFactory()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:39:25 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final void org.springframework.orm.hibernate4.support.HibernateDaoSupport.setHibernateTemplate(org.springframework.orm.hibernate4.HibernateTemplate)] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:39:25 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [protected final org.hibernate.Session org.springframework.orm.hibernate4.support.HibernateDaoSupport.currentSession() throws org.springframework.dao.DataAccessResourceFailureException] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:39:25 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [protected final void org.springframework.orm.hibernate4.support.HibernateDaoSupport.checkDaoConfig()] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:39:25 INFO  CglibAopProxy 265 doValidateClass - Unable to proxy method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2017-10-25 23:39:25 ERROR DruidDataSource 643 init - init datasource error, url: jdbc:mysql://localhost:3306/communitydatabase?useUnicode=true&characterEncoding=utf-8&useSSL=true com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'communitydatabase'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:951) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1717) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2395) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.20.jar:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375) ~[druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431) ~[druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:632) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:934) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:930) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:102) [druid-1.0.13.jar:1.0.13]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:279) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:124) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1885) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1843) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:372) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:454) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:439) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at com.aaron.Application.main(Application.java:12) [classes/:?]
+
+2017-10-25 23:39:25 ERROR DruidDataSource 660 init - dataSource init error com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'communitydatabase'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:951) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1717) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2395) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.20.jar:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_51]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_51]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305) ~[mysql-connector-java-5.1.20.jar:?]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375) ~[druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431) ~[druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:632) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:934) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:930) [druid-1.0.13.jar:1.0.13]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:102) [druid-1.0.13.jar:1.0.13]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:279) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:124) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1885) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1843) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928) [hibernate-core-4.3.6.Final.jar:4.3.6.Final]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:372) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:454) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:439) [spring-orm-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742) [spring-beans-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) [spring-context-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.5.RELEASE.jar:1.4.5.RELEASE]
+	at com.aaron.Application.main(Application.java:12) [classes/:?]
+
+2017-10-25 23:39:25 INFO  DruidDataSource 669 init - {dataSource-2} inited
+2017-10-25 23:39:25 WARN  JdbcServicesImpl 204 configure - HHH000342: Could not obtain connection to query metadata : Unknown database 'communitydatabase'
+2017-10-25 23:39:25 INFO  Dialect 145 <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-25 23:39:25 INFO  LobCreatorBuilder 88 useContextualLobCreation - HHH000422: Disabling contextual LOB creation as connection was null
+2017-10-25 23:39:25 INFO  TransactionFactoryInitiator 62 initiateService - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-25 23:39:25 INFO  ASTQueryTranslatorFactory 47 <init> - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-25 23:39:25 INFO  HibernateTransactionManager 360 afterPropertiesSet - Using DataSource [{
+	CreateTime:"2017-10-25 23:39:23",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:3,
+	ConnectCount:3,
+	Connections:[
+		{ID:1565614310, ConnectTime:"2017-10-25 23:39:24", UseCount:0, LastActiveTime:"2017-10-25 23:39:24"},
+		{ID:783141366, ConnectTime:"2017-10-25 23:39:24", UseCount:0, LastActiveTime:"2017-10-25 23:39:24"},
+		{ID:688113407, ConnectTime:"2017-10-25 23:39:24", UseCount:0, LastActiveTime:"2017-10-25 23:39:24"},
+		{ID:1638864144, ConnectTime:"2017-10-25 23:39:24", UseCount:0, LastActiveTime:"2017-10-25 23:39:24"},
+		{ID:934223763, ConnectTime:"2017-10-25 23:39:24", UseCount:3, LastActiveTime:"2017-10-25 23:39:25"}
+	]
+}
+
+[
+	{
+	ID:1565614310, 
+	poolStatements:[
+		]
+	},
+	{
+	ID:783141366, 
+	poolStatements:[
+		]
+	},
+	{
+	ID:688113407, 
+	poolStatements:[
+		]
+	},
+	{
+	ID:1638864144, 
+	poolStatements:[
+		]
+	},
+	{
+	ID:934223763, 
+	poolStatements:[
+		]
+	}
+]] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-25 23:39:25 INFO  HibernateTransactionManager 360 afterPropertiesSet - Using DataSource [{
+	CreateTime:"2017-10-25 23:39:25",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}
+
+[
+]] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-25 23:39:26 INFO  MBeanExporter 431 afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+2017-10-25 23:39:26 INFO  MBeanExporter 916 autodetect - Bean with name 'serverDataSource' has been autodetected for JMX exposure
+2017-10-25 23:39:26 INFO  MBeanExporter 916 autodetect - Bean with name 'communityDataSource' has been autodetected for JMX exposure
+2017-10-25 23:39:26 INFO  MBeanExporter 671 registerBeanInstance - Located MBean 'serverDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=serverDataSource,type=DruidDataSource]
+2017-10-25 23:39:26 INFO  MBeanExporter 671 registerBeanInstance - Located MBean 'communityDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=communityDataSource,type=DruidDataSource]
+2017-10-25 23:39:26 INFO  StartupInfoLogger 57 logStarted - Started Application in 4.401 seconds (JVM running for 6.729)
